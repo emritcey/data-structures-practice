@@ -21,7 +21,8 @@ describe FixedArray do
 		end 
 
 		it "throws an OutOfBoundsError if requested spot does not exist" do 
-			expect(array.get(25)).to raise_error(OutOfBoundsError)
+			expect { array.get(25) }.to raise_error(OutOfBoundsError)
+			expect { array.get(-1) }.to raise_error(OutOfBoundsError)
 		end 
 	end 
 
