@@ -27,3 +27,7 @@ Implement and write RSpec tests for the `FixedArray` class. The class must confo
 
 * [Wikipedia: Array data type](http://en.wikipedia.org/wiki/Array_data_type#Abstract_arrays)
 * [Wikipedia: Array data structure](http://en.wikipedia.org/wiki/Array_data_structure)
+
+# Data Structures Practice
+
+This file contains practice on data structures. 
