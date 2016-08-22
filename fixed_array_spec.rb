@@ -26,5 +26,18 @@ describe FixedArray do
 		end 
 	end 
 
+	describe "#set" do 
+		array = FixedArray.new
+		it "sets the value of an spot inside of the array" do 
+			array.set(3, "Hi")
+			expect(array.get(3)).to eq "Hi"
+		end 
+
+		it "throws an error if you try to set a spot that doesn't exist in the array" do 
+			expect { array.set(25, "hi") }.to raise_error(OutOfBoundsError)
+		end 
+
+	end 
+
   
 end
