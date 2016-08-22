@@ -1,7 +1,7 @@
 class FixedArray
 
 	def initialize(size = 20)
-		@array = Array.new(size)
+		@array = Array.new(size, nil)
 	end 
 
 	def size 
