@@ -12,5 +12,18 @@ describe FixedArray do
 			expect(array.size).to eq 25
 		end 
 	end 
+
+	describe "#get" do 
+		array = FixedArray.new
+
+		it "returns value of requested spot" do
+			expect(array.get(5)).to eq nil 
+		end 
+
+		it "throws an OutOfBoundsError if requested spot does not exist" do 
+			expect(array.get(25)).to raise_error(OutOfBoundsError)
+		end 
+	end 
+
   
 end
