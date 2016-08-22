@@ -12,6 +12,12 @@ class FixedArray
 		raise OutOfBoundsError if index >= self.size || index < 0
 		@array[index]
 	end 
+
+	def set(index, value)
+		raise OutOfBoundsError if index >= self.size || index < 0
+		@array[index] = value
+	end 
+
 end
 
 class OutOfBoundsError < StandardError; end 
